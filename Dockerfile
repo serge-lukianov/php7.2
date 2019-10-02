@@ -9,4 +9,6 @@ RUN \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
     
-EXPOSE 80 443 9000 5000
+RUN mkdir -p /opt/bitnami/php/bin && ln -s `which php` /opt/bitnami/php/bin/php 
+
+EXPOSE 80 443 9000
