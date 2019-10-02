@@ -8,3 +8,5 @@ RUN \
     && apt-get install -y --no-install-recommends php7.2-bcmath php7.2-pgsql \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+    
+EXPOSE 80 443 9000 5000
