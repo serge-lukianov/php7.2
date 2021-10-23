@@ -1,7 +1,7 @@
 FROM phpdockerio/php72-fpm
 
 RUN \
-    curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+    curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && apt-get update  \
     && apt-get install -y --no-install-recommends software-properties-common gnupg2 libpng-dev build-essential automake libtool autoconf \
     && apt-get install -y --no-install-recommends cron nginx supervisor nodejs \
